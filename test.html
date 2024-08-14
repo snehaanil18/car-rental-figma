@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+     <section> 
+        
+        <div class="navbar">
+
+          <div class="social-media">
+            <ul type="none">
+              <li>
+                <a href=""><img src="./Images/fb.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./Images/instagram.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./Images/x.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./Images/linkedin.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="nav-elements">
+            <div class="logo">
+              <img src="./Images/logo-1.png" alt="" />
+            </div>
+
+              <div class="nav-menu">
+                <ul type="none" id="nav-list">
+                  <li><a href="">About</a></li>
+                  <li><a href="">Offers</a></li>
+                  <li><a href="">Coporate</a></li>
+                  <li><a href="">Persona</a>l</li>
+                  <li><a href="">Locations</a></li>
+                  <li><a href="">Contact Us</a></li>
+                  <li id="nav-menu-buttons"><button id="notification">  <img src="./Images/notification_1.svg" alt="" /></button>
+                    <button id="user">
+                  <span id="letter">J</span><span id="name">John Doe</span>
+                    </button></li>
+                </ul>
+              
+                
+                <div class="menubutton">
+                  <button id="menu-nav" onclick="openNav()"><img src="/Images/menu.svg" alt=""></button>
+                </div>
+
+              </div>
+          </div>
+              <div class="text">
+                <marquee>Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor
+                  Grand Sales Counters | All Rates inclusive of VAT. T&C’s apply |
+                  Follow us on Social Media for New Offers</marquee>
+              </div>
+              
+        </div>
+
+        
+
+        <div id="sidebar" class="menu-sidebar">
+          <img src="/Images/close.svg" id="close-button" alt="">
+          <div class="sidenav-menu-items">
+          <a href="">About</a> <hr>
+          <a href="">Offers</a> <hr>
+          <a href="">Coporate</a> <hr>
+          <a href="">Personal</a> <hr>
+          <a href="">Locations</a> <hr>
+          <a href="">Contact Us</a> <hr>
+          <button id="login-signup">Login / Sign Up</button>
+          </div>
+        </div>
+      </section> 
+<main>
+  <div class="main">
+    <!-- Search pick up and drop -->
+    <section id="search-section">
+      <div class="search">
+        <!-- labels -->
+        <div class="search-labels">
+          <button>Same as pick up</button>
+          <button>Different drop off</button>
+          <select name="" id="vehicle-type">
+            <option class="set" value="">Select Vehicle type</option>
+          </select>
+        </div>
+
+        <!-- input -->
+        <div class="input-fields">
+          <div class="location">
+            <img class="location-icon" src="./Images/location.svg" alt="" />
+            <select name="" id="location-select">
+              <option value="">Al Quoz</option>
+            </select>
+            <img class="dropdown-icon" src="./Images/drop-down.svg" alt="" />
+          </div>
+
+          <input type="datetime-local" />
+          <input type="datetime-local" />
+          <button id="search-button">
+            <img src="./Images/magnifier.svg" alt="" />
+          </button>
+          <div class="divider"></div>
+          <button id="book-button">Quick Book</button>
+        </div>
+
+        <!-- links -->
+        <div class="download-links">
+          <p>Download our App for easy accessibility anytime, anywhere!</p>
+          <div class="stores">
+            <img src="./Images/appstore.svg" alt="" />
+            <img src="./Images/googleplay.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div id="booking">
+
+        <div class="buttons">
+          <button onclick="openbooking()" id="book-car">Book a Car</button>
+          <button id="quick-book">Quick Book</button>
+        </div>
+
+        <div id="expandBooking" class="search-phone">
+        <div class="search-label-phone">
+          <button>Same as pick up</button>
+          <button>Different drop off</button>
+          <select name="" id="vehicle-type">
+            <option class="set" value="">Vehicle type</option>
+          </select>
+        </div>
+
+        <div class="input-fiels-phone">
+          <div class="location">
+            <img class="location-icon" src="./Images/location.svg" alt="" />
+            <select name="" id="location-select">
+              <option value="">Al Quoz</option>
+              <option value="">Al Quoz</option>
+            </select>
+            <img class="dropdown-icon" src="./Images/drop-down.svg" alt="" />
+          </div>
+          <input placeholder="Pick Up Data & Time" type="text" />
+          <input placeholder="Drop Off Date & Time" type="text" />
+        </div>
+
+        <div class="search-button-phone">
+          <button id="search-car">Search</button>
+        </div>
+       
+
+      </div>
+      </div>
+
+    </section>
+    <div class="icons">
+      <button><img src="/Images/phone-icon.svg" alt=""></button>
+      <button id="side-icon"><img src="/Images/side-icon.svg" alt=""></button>
+    </div>
+
+    <!-- banner -->
+
+    
+  </div>
+
+</main>
+
+
+
+      
+
+
+    <script>
+        function openNav(){
+          let navbar = document.getElementById("sidebar")
+          if(navbar.style.display==='none'||navbar.style.display===''){
+            navbar.style.display='block'
+          }
+        }
+
+        function openbooking(){
+          booking = document.getElementById("expandBooking")
+          if(booking.style.display=='none'||booking.style.display==''){
+            booking.style.display='block'
+          }
+          else{
+            booking.style.display='none'
+          }
+        }
+    </script>
+</body>
+</html>
