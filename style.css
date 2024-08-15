@@ -174,7 +174,7 @@
 }
 
 .search {
-    background-image: url('/Images/red.svg');
+    background-image: url('./Images/red.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
