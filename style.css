@@ -303,7 +303,7 @@
 .buttons {
     margin-top: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .buttons button {
@@ -613,6 +613,11 @@ h2 {
     padding: 5px 25px 5px 7px;
 }
 
+.place-name{
+    display: flex;
+    box-sizing: border-box;
+}
+
 
 .places .divider {
     background-color: white;
@@ -791,10 +796,14 @@ h2 {
 
     .menubutton {
         display: block;
+        /* border: none;
+        background: transparent; */
+    }
+
+    #menu-nav{
         border: none;
         background: transparent;
     }
-
     
 
     .main {
@@ -855,14 +864,15 @@ h2 {
     }
 
     .location {
-        width: 100%;
+        width: 92%;
         background: #F6F7F9;
 
     }
 
     #location-select {
-        padding: 10px 54px;
+        padding: 15px 44px;
         width: 100%;
+        
     }
 
     #location-select option {
